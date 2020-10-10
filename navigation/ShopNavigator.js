@@ -29,9 +29,10 @@ import EditProductScreen, {
 import AuthScreen, {
   screenOptions as authScreenOptions
 } from '../screens/user/AuthScreen';
-import StartupScreen from '../screens/StartupScreen';
+import HomeScreen from '../screens/MainScreen';
 import Colors from '../constants/Colors';
 import * as authActions from '../store/actions/auth';
+import MainScreen from '../screens/MainScreen';
 
 const defaultNavOptions = {
   headerStyle: {
@@ -133,7 +134,7 @@ export const ShopNavigator = () => {
     >
       <ShopDrawerNavigator.Screen
         name="Products"
-        component={ProductsNavigator}
+        component={MainScreen}
         options={{
           drawerIcon: props => (
             <Ionicons
