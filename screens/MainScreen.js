@@ -23,7 +23,7 @@ export default MainScreen = (props) => {
                         iconName = Platform.OS === 'android' ? 'md-create' : 'ios-create';
                     }
 
-                    return <Ionicons name={iconName} size={23} color='{Colors.accent}' />
+                    return <Ionicons name={iconName} size={23} color={Colors.accent} />
                 },
 
             })}
